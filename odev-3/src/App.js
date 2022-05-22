@@ -1,14 +1,12 @@
-import Container from "./components/Container";
+import WeatherContainer from "./components/WeatherContainer";
 import { WeatherProvider } from "./Context/WeatherContext";
 
 function App() {
-   return (
-      <>
-         <WeatherProvider>
-            <Container />
-         </WeatherProvider>
-      </>
-   );
+  return (
+    <WeatherProvider>
+      <WeatherContainer />
+    </WeatherProvider>
+  );
 }
 
 export default App;
